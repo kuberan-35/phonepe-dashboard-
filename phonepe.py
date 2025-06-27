@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-import plotly.express as plotly
+#import plotly.express as plotly
 import psycopg2
 
 engine = psycopg2.connect(
