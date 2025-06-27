@@ -4,10 +4,7 @@ import plotly.express as plotly
 import psycopg2
 
 engine = psycopg2.connect(
-        dbname="project phonepe",
-        user="postgres",
-        password="63693103k@",
-        host="localhost",
+        host="localhost", database="project phonepe", user="postgres", password="63693103k@"
     )
 
 # ------------------------ PAGE SETUP ------------------------ #
