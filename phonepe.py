@@ -19,6 +19,6 @@ def get_filter_options():
     df_years = pd.read_sql("SELECT DISTINCT year FROM df_top_insurance", engine)
     return sorted(df_states['state']), sorted(df_years['year'])
 
-states, years = get_filter_options
+states, years = get_filter_options()
 state_filter = st.sidebar.selectbox("Select State", states)
 year_filter = st.sidebar.selectbox("Select Year", years)
